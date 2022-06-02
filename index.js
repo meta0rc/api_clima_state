@@ -68,7 +68,7 @@ app.post('/search', async (req, res) => {
         //     
         await browser.close();     
         
-        return res.status(200).json(clima)
+        return res.status(200).json({tempo: clima})
         
     })();
     
