@@ -3,11 +3,11 @@ const cors = require('cors')
 const puppeteer = require('puppeteer');
 const app = express()
 
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 
-app.use(cors())
 
 const port = process.env.PORT || 3333
 
