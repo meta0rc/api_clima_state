@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }))
 const port = process.env.PORT || 3333
 
 
-app.get('/', async (req, res) => {
+app.get('/default', async (req, res) => {
 
     (async () => {
         const browser = await puppeteer.launch();
